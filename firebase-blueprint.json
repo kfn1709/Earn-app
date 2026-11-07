@@ -1,0 +1,46 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "type": "object",
+      "description": "User account profile and sync info",
+      "properties": {
+        "userId": { "type": "string" },
+        "displayName": { "type": "string" },
+        "email": { "type": "string" },
+        "photoUrl": { "type": "string" },
+        "points": { "type": "integer" },
+        "totalEarnedUsd": { "type": "number" },
+        "adsWatchedCount": { "type": "integer" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "displayName", "email", "points", "updatedAt"]
+    },
+    "PayoutRequest": {
+      "title": "PayoutRequest",
+      "type": "object",
+      "description": "Payout request submitted by the user",
+      "properties": {
+        "payoutId": { "type": "string" },
+        "userId": { "type": "string" },
+        "method": { "type": "string" },
+        "accountDetails": { "type": "string" },
+        "pointsDeducted": { "type": "integer" },
+        "amountUsd": { "type": "number" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["payoutId", "userId", "method", "accountDetails", "pointsDeducted", "amountUsd", "status", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "entity": "UserProfile",
+      "description": "Stores user profile and synced rewards balance"
+    },
+    "/users/{userId}/payouts/{payoutId}": {
+      "entity": "PayoutRequest",
+      "description": "Stores withdrawal requests created by the user"
+    }
+  }
+}

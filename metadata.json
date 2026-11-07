@@ -1,0 +1,6 @@
+{
+  "name": "AdReward",
+  "description": "تطبيق لربح المال والمكافآت الحقيقية من مشاهدة الإعلانات والمهام وعجلة الحظ وسحب الأرباح",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">AdReward</string>
+    <string name="app_tagline">اربح المال والمكافآت من مشاهدة الإعلانات</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_watch_ads">مشاهدة الإعلانات</string>
+    <string name="nav_games">عجلة الحظ والحك</string>
+    <string name="nav_withdraw">سحب الأرباح</string>
+    <string name="nav_tasks">المهام والعروض</string>
+    <string name="nav_leaderboard">المتصدرون</string>
+    
+    <!-- Wallet & Balance -->
+    <string name="wallet_title">محفظتي الرقمية</string>
+    <string name="balance_points">%1$,d نقطة</string>
+    <string name="balance_usd">$%1$.2f USD</string>
+    <string name="points_to_usd_rate">1,000 نقطة = 1.00$ دولار</string>
+    <string name="min_payout_progress">التقدم نحو السحب: %1$d%%</string>
+    <string name="min_payout_target">الحد الأدنى للسحب هو 5,000 نقطة ($5.00)</string>
+    <string name="daily_streak_title">سلسلة تسجيل الدخول اليومي</string>
+    <string name="claim_daily_bonus">استلام مكافأة اليوم (%1$d نقطة)</string>
+    <string name="daily_claimed">تم استلام مكافأة اليوم!</string>
+    
+    <!-- Ads Section -->
+    <string name="watch_rewarded_video">فيديو إعلاني كامل (+100 نقطة)</string>
+    <string name="watch_rewarded_video_desc">شاهد إعلاناً ترويجياً لمدة 15-30 ثانية لكسب نقاط عالية</string>
+    <string name="watch_interstitial">إعلان خاطف (+35 نقطة)</string>
+    <string name="watch_interstitial_desc">استعراض إعلاني سريع مدته 5 ثوانٍ فقط</string>
+    <string name="watch_sponsored_click">زيارة موقع الراعي (+50 نقطة)</string>
+    <string name="watch_sponsored_click_desc">تصفح متجر أو صفحة الراعي الرسمي</string>
+    <string name="interactive_demo_ad">تجربة تطبيق تفاعلي (+150 نقطة)</string>
+    <string name="interactive_demo_ad_desc">جرب تطبيق أو لعبة راعية لمدة 20 ثانية</string>
+    <string name="ads_watched_today">الإعلانات المشاهدة اليوم: %1$d / %2$d</string>
+    <string name="ad_cooldown">يرجى الانتظار ثوانٍ قليلة لتجهيز الإعلان التالي</string>
+    
+    <!-- Lucky Spin & Scratch -->
+    <string name="spin_wheel_title">عجلة الحظ اليومية</string>
+    <string name="spin_wheel_desc">أدر العجلة واربح حتى 500 نقطة وجوائز فورية</string>
+    <string name="spin_button">تدوير العجلة الآن!</string>
+    <string name="spinning">العجلة تدور...</string>
+    <string name="spins_remaining">المحاولات المتبقية: %1$d</string>
+    <string name="scratch_card_title">بطاقات اكشط واربح</string>
+    <string name="scratch_card_desc">احك المربعات الذهبية لكشف المكافأة السرية</string>
+    <string name="scratch_now">اكشط الآن</string>
+    <string name="scratch_completed">مبروك! كشفت عن %1$d نقطة!</string>
+    
+    <!-- Withdraw Section -->
+    <string name="withdraw_title">طرق سحب الأرباح المعتمدة</string>
+    <string name="withdraw_subtitle">تحويل فوري وآمن عند وصولك للحد الأدنى</string>
+    <string name="method_paypal">PayPal (باي بال)</string>
+    <string name="method_usdt">USDT (العملات الرقمية TRC20)</string>
+    <string name="method_google_play">بطاقات Google Play</string>
+    <string name="method_vodafone">فودافون كاش / محافظ إلكترونية</string>
+    <string name="method_stc">STC Pay / رصيد جوال</string>
+    <string name="method_amazon">بطاقات أمازون للتسوق</string>
+    <string name="enter_account_details">أدخل بريدك الإلكتروني أو رقم المحفظة</string>
+    <string name="request_payout_button">تأكيد طلب السحب</string>
+    <string name="insufficient_points">عفواً، رصيدك الحالي أقل من الحد الأدنى للسحب</string>
+    <string name="payout_success">تم إرسال طلب السحب بنجاح! سيصلك التحويل خلال 24 ساعة.</string>
+    
+    <!-- Referral & Live Activity -->
+    <string name="referral_title">برنامج الإحالة ودعوة الأصدقاء</string>
+    <string name="referral_desc">شارك كود دعوتك الخاص واحصل على 500 نقطة + 15% من أرباح أصدقائك للأبد!</string>
+    <string name="your_invite_code">كود دعوتك:</string>
+    <string name="share_code_button">مشاركة الكود مع الأصدقاء</string>
+    <string name="copy_code">نسخ الكود</string>
+    <string name="code_copied">تم نسخ كود الدعوة!</string>
+    <string name="live_payouts_title">سحوبات المشتركين الحية</string>
+    <string name="faq_title">الأسئلة الشائعة وقواعد الأمان</string>
+
+    <!-- Cloud Sync & Auth -->
+    <string name="auth_app_title">تطبيق الأرباح الذكي</string>
+    <string name="auth_subtitle_login">سجل دخولك لمتابعة أرباحك وعروضك السحابية</string>
+    <string name="auth_subtitle_register">أنشئ حساباً جديداً وابدأ الربح فوراً</string>
+    <string name="auth_username_label">اسم المستخدم</string>
+    <string name="auth_username_placeholder">أدخل اسمك هنا</string>
+    <string name="auth_email_label">البريد الإلكتروني</string>
+    <string name="auth_email_placeholder">name@example.com</string>
+    <string name="auth_password_label">كلمة المرور</string>
+    <string name="auth_password_placeholder">••••••••</string>
+    <string name="auth_btn_login">تسجيل الدخول</string>
+    <string name="auth_btn_register">إنشاء حساب جديد</string>
+    <string name="auth_btn_google">المتابعة السريعة بواسطة Google</string>
+    <string name="auth_toggle_to_register">ليس لديك حساب؟ إنشاء حساب جديد</string>
+    <string name="auth_toggle_to_login">لديك حساب بالفعل؟ سجل دخولك</string>
+    <string name="auth_guest_continue">متابعة كزائر مؤقت</string>
+    <string name="sign_in_title">تسجيل الدخول ومزامنة الأرباح</string>
+    <string name="sign_in_subtitle">سجل دخولك بحساب Google لحفظ رصيدك في السحابة وضمان عدم ضياع نقاطك</string>
+    <string name="sign_in_google">تسجيل الدخول بواسطة Google</string>
+    <string name="sign_out">تسجيل الخروج</string>
+    <string name="syncing_cloud">جاري المزامنة مع السحابة...</string>
+    <string name="cloud_synced">تم حفظ الرصيد في السحابة</string>
+    <string name="guest_mode">متابعة كزائر (بدون مزامنة سحابية)</string>
+
+    <!-- Onboarding Guide -->
+    <string name="onboarding_title">دليل البداية السريعة للأرباح</string>
+    <string name="onboarding_step1_title">1. شاهد الإعلانات والعروض</string>
+    <string name="onboarding_step1_desc">شاهد فيديوهات إعلانية قصيرة يومياً واكسب حتى 200 نقطة لكل إعلان مع AdMob.</string>
+    <string name="onboarding_step2_title">2. العب واربح مكافآت فورية</string>
+    <string name="onboarding_step2_desc">أدر عجلة الحظ واحك بطاقات الخدش يومياً للحصول على جوائز وهدايا مجانية تصل لـ 500 نقطة.</string>
+    <string name="onboarding_step3_title">3. اسحب أرباحك فوراً</string>
+    <string name="onboarding_step3_desc">حول نقاطك لأموال حقيقية عبر CIH أو BMCE أو PayPal أو USDT عند وصولك لـ 1,000 نقطة ($1.00).</string>
+    <string name="onboarding_got_it">فهمت، ابدأ الربح الآن!</string>
+    <string name="onboarding_skip">تخطي الشرح</string>
+    <string name="onboarding_next">التالي</string>
+</resources>

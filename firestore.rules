@@ -1,0 +1,49 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function isValidUserProfile(userId) {
+      let data = request.resource.data;
+      return data.userId == userId
+          && data.displayName is string
+          && data.email is string
+          && data.points is int && data.points >= 0
+          && (!('totalEarnedUsd' in data) || data.totalEarnedUsd is number)
+          && (!('adsWatchedCount' in data) || (data.adsWatchedCount is int && data.adsWatchedCount >= 0))
+          && data.updatedAt is timestamp && data.updatedAt <= request.time;
+    }
+
+    function isValidPayoutRequest(userId, payoutId) {
+      let data = request.resource.data;
+      return data.payoutId == payoutId
+          && data.userId == userId
+          && data.method is string
+          && data.accountDetails is string
+          && data.pointsDeducted is int && data.pointsDeducted > 0
+          && data.amountUsd is number && data.amountUsd > 0.0
+          && data.status in ['pending', 'processing', 'completed', 'rejected']
+          && data.createdAt is timestamp && data.createdAt <= request.time;
+    }
+
+    match /users/{userId} {
+      allow read: if isOwner(userId);
+      allow create, update: if isOwner(userId) && isValidUserProfile(userId);
+      allow delete: if false;
+
+      match /payouts/{payoutId} {
+        allow read: if isOwner(userId);
+        allow create: if isOwner(userId) && isValidPayoutRequest(userId, payoutId);
+        allow update, delete: if false;
+      }
+    }
+  }
+}

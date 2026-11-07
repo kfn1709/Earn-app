@@ -1,0 +1,6 @@
+{
+  "firestore": {
+    "database": "ai-studio-android-adprofit-f975319e-02db-4492-ac1f-b884add2cd42",
+    "rules": "firestore.rules"
+  }
+}
